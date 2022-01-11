@@ -1,16 +1,16 @@
 import { createContext, useState } from 'react';
 import { v4 as uuidv4 } from 'uuid';
 
+import FeedbackData from '../data/FeedbackData';
+
 const FeedbackContext = createContext();
 
 export const FeedbackProvider = ({ children }) => {
-    const [feedback, setFeedback] = useState([
-        {
-            id: 1,
-            text: 'This item is from context',
-            rating: 10,
-        },
-    ]);
+    const [feedback, setFeedback] = useState(FeedbackData);
+    const [feedbackEdit, setFeedbackEdit] = useState({
+        item: {},
+        edit: false,
+    });
 
     const addFeedback = newFeedback => {
         newFeedback.id = uuidv4();
@@ -19,6 +19,13 @@ export const FeedbackProvider = ({ children }) => {
             newFeedback,
             ...feedback
         ])
+    };
+
+    const editFeedback = item => {
+      setFeedbackEdit({
+          item,
+          edit: true,
+      })
     };
 
     const deleteFeedback = id => {
