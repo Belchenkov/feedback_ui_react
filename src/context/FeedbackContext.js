@@ -11,11 +11,15 @@ export const FeedbackProvider = ({ children }) => {
         },
     ]);
 
-    return <FeedbackContext.Provider value={{
-        feedback,
-    }}>
-        { children }
-    </FeedbackContext.Provider>
-};
+    return (
+        <FeedbackContext.Provider
+            value={{
+                feedback,
+            }}
+        >
+            {children}
+        </FeedbackContext.Provider>
+    )
+}
 
-export default FeedbackProvider;
+export default FeedbackContext;
