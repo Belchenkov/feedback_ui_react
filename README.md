@@ -2,6 +2,8 @@
 
 > This project allows users to add, update and delete feedback. It uses a mock REST api with json-server.
 
+### [Demo](https://friendly-colden-4ebca3.netlify.app)
+
 ## Available Scripts
 
 In the project directory, you can run:
