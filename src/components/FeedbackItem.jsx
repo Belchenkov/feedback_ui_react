@@ -6,13 +6,13 @@ import Card from './shared/Card';
 import FeedbackContext from '../context/FeedbackContext';
 
 const FeedbackItem = ({ item }) => {
-    const { handleDelete, editFeedback } = useContext(FeedbackContext);
+    const { deleteFeedback, editFeedback } = useContext(FeedbackContext);
 
     return (
         <Card>
             <div className="num-display">{ item.rating }</div>
             <button
-                onClick={() => handleDelete(item.id)}
+                onClick={() => deleteFeedback(item.id)}
                 className="close"
             >
                 <FaTimes color='purple' />
