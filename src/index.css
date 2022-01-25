@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;700&display=swap');
 
 * {
     box-sizing: border-box;
@@ -7,10 +7,11 @@
 }
 
 body {
-    font-family: 'Poppins', sans-serif;
-    background-color: #202142;
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #348bcd;
     color: #fff;
     line-height: 1.6;
+    font-size: 18px;
 }
 
 ul {
@@ -87,7 +88,7 @@ header {
 
 .rating li:hover,
 .num-display {
-    background: #ff6a95;
+    background: #336b1f;
     color: #fff;
 }
 
@@ -96,7 +97,7 @@ header {
 }
 
 [type='radio']:checked ~ label {
-    background: #ff6a95;
+    background: #336b1f;
     color: #fff;
 }
 
@@ -160,7 +161,7 @@ input:focus {
 }
 
 .btn-secondary {
-    background: #ff6a95;
+    background: #6e4224;
 }
 
 .btn:hover {
@@ -198,7 +199,7 @@ input:focus {
 }
 
 .about-link a:hover {
-    color: #ff6a95;
+    color: #2b2764;
 }
 
 .about h1 {
