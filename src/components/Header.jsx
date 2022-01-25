@@ -9,7 +9,13 @@ const Header = ({ text, bgColor, textColor }) => {
 
     return (
         <header style={headerStyles}>
-            <div className="container">
+            <div
+                style={{ display: 'flex', alignItems: 'center' }}
+                className="container">
+                <img
+                    style={{ marginRight: '15px' }}
+                    src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/50/000000/external-feedback-business-motivation-wanicon-lineal-color-wanicon.png"
+                />
                 <h2>{ text }</h2>
             </div>
         </header>
@@ -20,7 +26,7 @@ const Header = ({ text, bgColor, textColor }) => {
 Header.defaultProps = {
     text: 'Feedback UI',
     bgColor: 'rgba(0,0,0,0.4)',
-    textColor: '#ff6a95',
+    textColor: '#c18c98',
 }
 
 Header.propTypes = {
